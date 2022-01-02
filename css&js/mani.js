@@ -9,11 +9,11 @@ async function loadMovies(searchTerm) {
     const url = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=89c5e3de`
 
     const res = await fetch(`${url}`,{
-        method:"GET",
-         headers:{
+        // method:"GET",
+        //  headers:{
              
-         },
-         
+        //  },
+
 
     })
 
