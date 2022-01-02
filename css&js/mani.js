@@ -57,6 +57,7 @@ function displayMovieList(movies) {
     loadMovieDetails()
 }
 function loadMovieDetails() {
+    
     const searchListMovies = searchList.querySelectorAll(".search-list-item")
     searchListMovies.forEach((movie) => {
         movie.addEventListener("click", async () => {
@@ -74,6 +75,7 @@ function loadMovieDetails() {
 }
 
 function displayMovieDetails(details) {
+    resultGrid.innerHTML=""
     resultGrid.innerHTML = `
 <div class="movie-poster">
 <img src="${(details.Poster != "N?A") ? details.Poster : "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"}" alt="movie poster">
