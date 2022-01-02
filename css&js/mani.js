@@ -8,7 +8,14 @@ async function loadMovies(searchTerm) {
     // const url =` http://www.omdbapi.com/?i=tt3896198&apikey=89c5e3de`
     const url = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=89c5e3de`
 
-    const res = await fetch(`${url}`)
+    const res = await fetch(`${url}`,{
+        method:"GET",
+         headers:{
+             
+         },
+         
+
+    })
 
     const data = await res.json()
     // console.log(data)
@@ -57,6 +64,7 @@ function displayMovieList(movies) {
     loadMovieDetails()
 }
 function loadMovieDetails() {
+    // resultGrid.innerHTML=" ";
     
     const searchListMovies = searchList.querySelectorAll(".search-list-item")
     searchListMovies.forEach((movie) => {
@@ -75,7 +83,7 @@ function loadMovieDetails() {
 }
 
 function displayMovieDetails(details) {
-    resultGrid.innerHTML=""
+    // resultGrid.innerHTML=" ";
     resultGrid.innerHTML = `
 <div class="movie-poster">
 <img src="${(details.Poster != "N?A") ? details.Poster : "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"}" alt="movie poster">
