@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Movies serach website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+            <div class="container">
+                <p>Movies <span>Corn</span></p>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movies</h3>
+                <input type="text " class="form-control" onkeyup="findMovies()" 
+                onclick="findMovies()" placeholder="Search Movie Title"
+                 id="movie-search-box">
+                <div class="search-list" id ="search-list">
+                    <!-- list here -->
+                    <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="https://www.cnet.com/a/img/hDHAWZUhlVonhhJaMfQLs94ydkg=/940x0/2019/07/22/5fcdb86d-4e4e-469a-8c2a-606dde8eb8bb/guardians-of-the-galaxy-2-poster.jpg"
+                                alt="">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Guardians of the Galaxy vol....2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- end of search container -->
+
+        <!-- result container  -->
+        <div class="container">
+            <div class="result-contaner">
+                <div class="result-grid" id="result-grid">
+                    <!-- movie information here -->
+                    <div class="movie-poster">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Guardians of the Galaxy vol .2
+                        </h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year : 2017</li>
+                            <li class="rated"> Ratings : PG-13</li>
+                            <li class="released"> released: 05 may 2017</li>
+                        </ul>
+                        <p class="genre"> <b>Genre:</b> Action, Adventure,Comedy</p>
+                        <p class="writer"><b>writer:</b> James Gunn Don Andy Lanning </p>
+                        <p class="actors"><b>actors:</b> Chris Pratt, zoe Saldana Dave Bautista</p>
+                        <p class="plot"><b>plot:</b> the Guardians stuggle to keep together as a team while dealing with their personal family issues notably Star-Lord's ecounter with his father the ambition celestial being Ego</p>
+                       <p class="language"> Language:English</p>
+                        <p class="awards"><b><i class="fas fa-award"></i></b> Nominated for i Oscar </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of result container -->
+
+    </div>
+</body>
+
+</html>
+<script src="mani.js"></script>
